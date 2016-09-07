@@ -85,8 +85,8 @@ margin:0
 
 #adminmenu,#adminmenu .wp-submenu,#adminmenuback,#adminmenuwrap,/* Sub Menu */
 #adminmenu .wp-has-current-submenu .wp-submenu,#adminmenu .wp-has-current-submenu .wp-submenu.sub-open,#adminmenu .wp-has-current-submenu.opensub .wp-submenu,#adminmenu a.wp-has-current-submenu:focus+.wp-submenu,.no-js li.wp-has-current-submenu:hover .wp-submenu {
-background:#f5f5f5;
-border-right: 1px solid #e4e4e5;
+background:#f6f6f6;
+border-right: 1px solid rgba(232, 232, 233, 1);
 }
 
 .wp-admin #wpadminbar .ab-top-menu > li.hover > .ab-item, #wpadminbar.nojq .quicklinks .ab-top-menu > li > .ab-item:focus, #wpadminbar:not(.mobile) .ab-top-menu > li:hover > .ab-item, #wpadminbar:not(.mobile) .ab-top-menu > li > .ab-item:focus {
@@ -143,7 +143,7 @@ display:none
 }
 
 #adminmenu li.menu-top {
-border-bottom:1px solid #e4e4e4
+border-bottom:1px solid rgba(232, 232, 233, 1);
 }
 
 #adminmenu div.wp-menu-name {
