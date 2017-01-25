@@ -106,6 +106,10 @@ html .wp-admin #wpwrap{
     padding-top:14px;
 }
 
+html .device-widget.wp-admin #wpwrap {
+  padding-top: 0px;
+}
+
 #adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head,#adminmenu .wp-menu-arrow,#adminmenu .wp-menu-arrow div,#adminmenu li.current a.menu-top,#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu,.folded #adminmenu li.current.menu-top,.folded #adminmenu li.wp-has-current-submenu,/* Hover actions */
 #adminmenu li.menu-top:hover,#adminmenu li.opensub>a.menu-top,#adminmenu li>a.menu-top:focus {
 background:<?php echo $fau_primary; ?>;
@@ -280,4 +284,8 @@ background-color: <?php echo $fau_secondary; ?>!important
 
 #wpcontent{
     background-color:white;
+}
+
+.device-widget.auto-fold #wpcontent {
+  padding-top: 14px;
 }
