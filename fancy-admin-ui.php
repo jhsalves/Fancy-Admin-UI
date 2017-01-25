@@ -45,12 +45,3 @@ function fui_admin_bar_style() {
   </style>
 <?php } }
 add_theme_support( 'admin-bar', array( 'callback' => 'fui_admin_bar_style' ) );
-//
-//add_action('admin_menu', 'shomtek_admin_menu');
-//
-//function shomtek_admin_menu() {
-//    global $menu;
-//    $url = network_home_url();
-//    $menu[0] = array( __('SHOMTek'), 'read', $url, 'shomtek-logo', 'shomtek-logo');
-//}
-

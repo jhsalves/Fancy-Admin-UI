@@ -4,6 +4,7 @@ add_action( 'admin_enqueue_scripts', 'mw_enqueue_color_picker' );
 function mw_enqueue_color_picker( $hook_suffix ) {
     wp_enqueue_style( 'wp-color-picker' );
     wp_enqueue_script( 'my-script-handle', plugins_url('fau-colorpicker.js', __FILE__ ), array( 'wp-color-picker' ), false, true );
+    wp_enqueue_script( 'main-admin-layout', plugins_url('main_admin_layout.js', __FILE__ ), array( 'jquery' ), false, true );
 }
 
 // Customize Fancy Admin UI Colors

@@ -43,7 +43,7 @@ background:<?php echo $fau_secondary; ?>
 
 #wpadminbar .menupop .ab-sub-wrapper,#wpadminbar .shortlink-input {
 margin-top:7px;
-left:0
+/*left:0*/
 }
 
 #wpadminbar .ab-submenu {
@@ -107,17 +107,68 @@ padding-left:34px
 color:#666
 }
 
-#adminmenu a.shomtek-logo{
-    display: block;
-    background: url(http://lojica.devel/wp-content/themes/wp-toot/assets/images/logo.png) no-repeat center center;
-    background-size: 140px 40px;
-    width: 140px;
-    opacity: 0.6;
-    height: 40px;
-    margin: 0 auto;
-    padding: 10px 5px;
+ #wpadminbar li#wp-admin-bar-lojica-logo {
+  display: block;
 }
 
-#adminmenu a.shomtek-logo div.wp-menu-name {
-    display: none;
+
+#adminmenu a.lojica-logo div.wp-menu-image img {
+    max-width: 55%;
+    padding: 8px 0 0;
+}
+
+#wpadminbar .lojica-logo a img{
+
+    max-height: inherit;
+    transition: all 1s ease-in-out 0s;
+    display:block;
+    vertical-align:middle;
+}
+#wpadminbar .lojica-logo a{
+    height: auto;
+    max-height: 38px;
+}
+
+#wpadminbar ul li.lojica-logo {
+  padding: 3px;
+}
+
+.device-widget #wpadminbar ul li.lojica-logo {
+  padding: 11px;
+}
+
+.device-widget #adminmenu {
+  margin-top: 15px;
+}
+
+.logged-in #wpadminbar .quicklinks .ab-empty-item,
+.logged-in #wpadminbar .quicklinks > ul > li > a {
+  height: 31px;
+}
+
+.logged-in #wpadminbar #wp-admin-bar-customize > .ab-item::before,
+.logged-in #wpadminbar #wp-admin-bar-edit > .ab-item::before,
+.logged-in #wpadminbar #wp-admin-bar-my-account > .ab-item::before,
+.logged-in #wpadminbar #wp-admin-bar-my-sites > .ab-item::before,
+.logged-in #wpadminbar #wp-admin-bar-site-name > .ab-item::before {
+  top:0px;
+}
+ 
+.logged-in  #wpadminbar #wp-admin-bar-new-content .ab-icon::before {
+    height: 32px !important;
+    line-height: initial;
+}
+
+.logged-in  #wpadminbar #wp-admin-bar-comments .ab-icon::before {
+    height: 32px !important;
+    line-height: initial;
+}
+
+
+.logged-in  #wpadminbar .ab-icon {
+    height: auto;
+}
+
+.logged-in  #wpadminbar .quicklinks li#wp-admin-bar-my-account.with-avatar > a img {
+  top:0;
 }
