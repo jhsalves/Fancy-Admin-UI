@@ -45,3 +45,8 @@ function fui_admin_bar_style() {
   </style>
 <?php } }
 add_theme_support( 'admin-bar', array( 'callback' => 'fui_admin_bar_style' ) );
+
+add_action('init',function(){
+   global $wp;
+   var_dump($wp->request);
+});
