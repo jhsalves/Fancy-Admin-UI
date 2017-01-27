@@ -1,22 +1,6 @@
-<?php
-  header("Content-type: text/css; charset: UTF-8");
-
-  require_once('../../../../wp-config.php');
-
-  if(get_option( 'fau_primary_color') != ""):
-    $fau_primary    = get_option( 'fau_primary_color');
-  else :
-    $fau_primary    = "#3498db";
-  endif;
-  if(get_option( 'fau_secondary_color') != ""):
-    $fau_secondary  = get_option( 'fau_secondary_color');
-  else :
-    $fau_secondary    = "#2581bf";
-  endif;
-?>
-
-body, html {
-background:<?php echo 'white'; ?>
+.login h1 a {
+  background-color: #FFF;
+  border-radius: 50%;
 }
 
 .login #login_error a,.login label,.login #backtoblog a,.login #nav a {
@@ -25,7 +9,7 @@ color:#FFF
 
 .login label,.login #nav,.login #backtoblog {
 display:block;
-text-align:center
+  text-align:center
 }
 
 .login #nav a:hover,.login #backtoblog a:hover {
@@ -53,7 +37,7 @@ float:none
 }
 
 #loginform,.login #login_error,.login .message {
-background:<?php echo $fau_secondary; ?>;
+background: rgba(0,0,0,0.2);
 color:#FFF
 }
 
@@ -69,4 +53,8 @@ font-size:18px;
 margin-top:15px;
 padding:10px 0;
 width:100%
+}
+
+.wp-core-ui .button-primary {
+text-shadow: none;
 }
