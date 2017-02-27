@@ -11,7 +11,7 @@
   define('FANCY_ADMIN_URL', plugin_dir_url(__FILE__));
   define('FANCY_ADMIN_ROOT',  plugin_dir_path(__FILE__));
 
-include_once('inc/fau_settings.php');
+//include_once('inc/fau_settings.php');
 
 function fau_login_theme_style() {
 

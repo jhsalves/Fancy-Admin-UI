@@ -17,7 +17,9 @@ function wp_lojica_admin_rodape() {
         switch_to_blog(get_current_site()->blog_id);
         $politica_de_privacidade = Lojica_Template()->obter_link_pagina('Política de privacidade');
         $termos_de_uso = Lojica_Template()->obter_link_pagina('Termos e condições de uso');
+        $creditos = Lojica_Template()->obter_link_pagina('Créditos');
+        $politica_de_suporte = Lojica_Template()->obter_link_pagina('Política de suporte');
         restore_current_blog();
     }
-    echo 'Copyright® Lojica | <a target="_blank" href="' . $termos_de_uso . '">Termos de uso</a> <a target="_blank" href="' . $politica_de_privacidade . '">Política de privacidade</a> | Leiate por <a href="http://boborchard.com" target="_blank">Bob Orchard</a></p>';
+    echo 'Lojica© 2017 | <a target="_blank" href="' . $termos_de_uso . '">Termos de uso</a> | <a target="_blank" href="' . $politica_de_privacidade . '">Política de privacidade</a> | <a href="'.$politica_de_suporte.'" target="_blank">Política de suporte</a> | <a href="'.$creditos.'" target="_blank">Créditos</a></p>';
 }
