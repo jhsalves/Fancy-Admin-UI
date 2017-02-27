@@ -188,3 +188,5 @@ function fui_admin_bar_style() {
   </style>
 <?php } }
 add_theme_support( 'admin-bar', array( 'callback' => 'fui_admin_bar_style' ) );
+
+include_once('inc/lojica_custom.php');
