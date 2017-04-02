@@ -1,0 +1,70 @@
+
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
+@import url(//fonts.googleapis.com/css?family=Lato:400,700);
+@import url(//fonts.googleapis.com/css?family=Roboto+Slab);
+
+
+ #wpadminbar li#wp-admin-bar-lojica-logo {
+  display: block;
+}
+
+
+#adminmenu a.lojica-logo div.wp-menu-image img {
+    max-width: 55%;
+    padding: 8px 0 0;
+}
+
+#wpadminbar .lojica-logo a img{
+
+    max-height: inherit;
+    transition: all 1s ease-in-out 0s;
+    display:block;
+    vertical-align:middle;
+}
+#wpadminbar .lojica-logo a{
+    height: auto;
+    max-height: 38px;
+    padding: 4px 12px !important;
+}
+
+#wpadminbar ul li.lojica-logo {
+  padding: 0px;
+}
+
+.device-widget #wpadminbar ul li.lojica-logo {
+  padding: 11px;
+}
+
+body.wp-admin, body.wp-admin div#wpwrap {
+  background: transparent none repeat scroll 0 0;
+}
+
+#wpadminbar #wp-admin-bar-root-default *{
+  font-family: "Lato";
+  font-size: 1em;
+  font-weight: 400;
+}
+
+body.wp-admin{
+  color: #7a7c82;
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 22px;
+}
+
+body.admin-bar, #wpwrap {
+  background: inherit;
+}
+
+body.wp-admin h1,
+body.wp-admin h2,
+body.wp-admin h3,
+body.wp-admin h4,
+body.wp-admin h5,
+body.wp-admin h6 {
+  font-family: "Roboto Slab";
+  font-weight: 400;
+  line-height: 1;
+}
