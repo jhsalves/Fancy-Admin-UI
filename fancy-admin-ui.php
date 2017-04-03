@@ -18,7 +18,7 @@ function fau_login_theme_style() {
   if(get_option( 'fau_primary_color') != ""):
     $fau_primary    = get_option( 'fau_primary_color');
   else :
-    $fau_primary    = "#3498db";
+    $fau_primary    = "#009cde";
   endif;
   if(get_option( 'fau_secondary_color') != ""):
     $fau_secondary  = get_option( 'fau_secondary_color');
@@ -45,7 +45,7 @@ function fau_admin_bar_theme_style() {
   if(get_option( 'fau_primary_color') != ""):
     $fau_primary    = get_option( 'fau_primary_color');
   else :
-    $fau_primary    = "#3498db";
+    $fau_primary    = "#009cde";
   endif;
   if(get_option( 'fau_secondary_color') != ""):
     $fau_secondary  = get_option( 'fau_secondary_color');
