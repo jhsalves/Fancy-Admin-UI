@@ -96,8 +96,8 @@ body.login #login {
     width: inherit;
 }
 
-.wp-core-ui .button-group.button-large .button,
-.wp-core-ui .button.button-large {
+.login .wp-core-ui .button-group.button-large .button,
+.login .wp-core-ui .button.button-large {
     color: #fff;
     font-family: Lato;
     font-size: 14px;
@@ -114,8 +114,8 @@ body.login #login {
     box-shadow: none;
     background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #f06422 0%, #ef7d47 59%, #ef9d77 100%) repeat scroll 0 0;
 }
-.wp-core-ui .button-group.button-large .button:hover,
-.wp-core-ui .button.button-large:hover{
+.login .wp-core-ui .button-group.button-large .button:hover,
+.login .wp-core-ui .button.button-large:hover{
     background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #ef9d77 0%, #ef7d47 59%, #f06422 100%) repeat scroll 0 0;
 }
 
