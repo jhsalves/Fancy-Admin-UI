@@ -9,7 +9,9 @@ add_action('login_enqueue_scripts', function() {
         wp_enqueue_style(
                 'admin_bar_custom_lojica', FANCY_ADMIN_URL . 'css/estilos_custom_lojica.css'
         );
+        switch_to_blog(get_current_site()->blog_id);
         $logo_simbolo = get_stylesheet_directory_uri() . '/assets/images/logo-simbolo.png';
+        restore_current_blog();
         wp_add_inline_style('admin_bar_custom_lojica', ".login h1 a {
     background-image: none, url('{$logo_simbolo}')");
     }

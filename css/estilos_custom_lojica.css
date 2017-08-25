@@ -1,7 +1,5 @@
 
-@import url(//fonts.googleapis.com/css?family=Open+Sans);
-@import url(//fonts.googleapis.com/css?family=Lato:400,700);
-@import url(//fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(/wp-content/mu-plugins/lojica/css/fonts.css);
 
 
 #wpadminbar li#wp-admin-bar-lojica-logo {
@@ -133,3 +131,26 @@ body.login #login {
     min-height: 110px;
 }
 
+.login.wp-core-ui .button-group.button-large .button,
+.login.wp-core-ui .button.button-large {
+  background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #f06422 0%, #ef7d47 59%, #ef9d77 100%) repeat scroll 0 0;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 4px;
+  box-shadow: none;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: bold;
+  height: 30px;
+  margin-top: 11px;
+  padding: 6px 12px;
+  line-height: 0;
+  text-shadow: initial;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+
+.login.wp-core-ui .button-group.button-large .button:hover,
+.login.wp-core-ui .button.button-large:hover {
+  background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #ef9d77 0%, #ef7d47 59%, #f06422 100%) repeat scroll 0 0;
+}
