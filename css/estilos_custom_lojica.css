@@ -1,156 +1,307 @@
 
 @import url(/wp-content/mu-plugins/lojica/css/fonts.css);
 
-
-#wpadminbar li#wp-admin-bar-lojica-logo {
-    display: block;
+.lojica-admin #wpwrap,
+.lojica-admin #wp-content-editor-tools{
+    background: #f3f5f7 !important;
 }
 
-
-#adminmenu a.lojica-logo div.wp-menu-image img {
-    max-width: 55%;
-    padding: 8px 0 0;
+.lojica-admin .postbox,
+.lojica-admin .welcome-panel,
+.lojica-admin #menu-management .menu-edit,
+.lojica-admin #menu-settings-column .accordion-container,
+.lojica-admin .comment-ays,
+.lojica-admin .feature-filter,
+.lojica-admin .imgedit-group,
+.lojica-admin .manage-menus,
+.lojica-admin .menu-item-handle, .popular-tags,
+.lojica-admin .stuffbox,
+.lojica-admin .widget-inside,
+.lojica-admin .widget-top,
+.lojica-admin .widgets-holder-wrap,
+.lojica-admin .wp-editor-container,
+.lojica-admin p.popular-tags,
+.lojica-admin table.widefat,
+.lojica-admin .wp-editor-expand #wp-content-editor-container{
+    box-shadow: 0 0 5px rgba(0,0,0,0.06);
+    background: white;
+    color: inherit;
+    color: rgba(97, 106, 120, .5);
+    border: 0;
+    transition: all .2s linear;
 }
 
-#wpadminbar .lojica-logo a img{
-
-    max-height: inherit;
-    transition: all 1s ease-in-out 0s;
-    display:block;
-    vertical-align:middle;
-}
-#wpadminbar .lojica-logo a{
-    height: auto;
-    max-height: 38px;
-    padding: 4px 12px !important;
+.lojica-admin .meta-box-sortables.ui-sortable .hndle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: transparent;
+    margin-bottom: 0;
+    font-size: 15px;
 }
 
-#wpadminbar ul li.lojica-logo {
+body.lojica-admin{
+    color: rgba(97, 106, 120, .5);
+}
+
+.lojica-admin #adminmenu,
+.lojica-admin #adminmenu .wp-submenu,
+.lojica-admin #adminmenuback,
+.lojica-admin #adminmenuwrap, #adminmenu .wp-has-current-submenu .wp-submenu,
+.lojica-admin #adminmenu .wp-has-current-submenu .wp-submenu.sub-open,
+.lojica-admin #adminmenu .wp-has-current-submenu.opensub .wp-submenu,
+.lojica-admin #adminmenu a.wp-has-current-submenu:focus + .wp-submenu,
+.lojica-admin .no-js li.wp-has-current-submenu:hover .wp-submenu {
+    background: white;
+    border-right: 1px solid #ebebeb;
+}
+
+.lojica-admin h1,
+.lojica-admin h2,
+.lojica-admin h3,
+.lojica-admin h4,
+.lojica-admin h5,
+.lojica-admin h6,
+.lojica-admin .h1,
+.lojica-admin .h2,
+.lojica-admin .h3,
+.lojica-admin .h4,
+.lojica-admin .h5,
+.lojica-admin .h6 {
+    color: #616a78;
+}
+
+.lojica-admin .wrap .add-new-h2:hover,
+.lojica-admin .wrap .page-title-action:hover,
+.lojica-admin .wrap .add-new-h2:active,
+.lojica-admin .wrap .page-title-action:active,
+.lojica-admin .wrap .add-new-h2:focus,
+.lojica-admin .wrap .page-title-action:focus,
+.lojica-admin.wp-core-ui .button:hover,
+.lojica-admin.wp-core-ui .button-primary:hover,
+.lojica-admin.wp-core-ui .button-secondary:hover,
+.lojica-admin.wp-core-ui .button:active,
+.lojica-admin.wp-core-ui .button-primary:active,
+.lojica-admin.wp-core-ui .button-secondary:active,
+.lojica-admin.wp-core-ui .button:focus,
+.lojica-admin.wp-core-ui .button-primary:focus,
+.lojica-admin.wp-core-ui .button-secondary:focus{
+    background-color: #eaecee;
+}
+
+.lojica-admin.wp-core-ui .button.button-primary{
+    background-color: #ca3377;
+    border-color: #ca3377;
+    color: white;
+}
+.lojica-admin.wp-core-ui .button.button-primary:hover{
+    background-color: #d0548b;
+    border-color: #d0548b;
+    color: white;
+    box-shadow: none;
+}
+
+.lojica-admin.wp-core-ui .button-secondary:hover,
+.lojica-admin.wp-core-ui .button:hover{
+    background-color: #edeff1;
+    border-color: #edeff1;
+    color: #616a78;
+}
+
+.lojica-admin a,
+.lojica-admin .form-table th, .form-wrap label{
+    color: #616a78;
+    transition: all .8s;
+    
+}
+
+.lojica-admin a:hover,
+.lojica-admin #adminmenu a:hover{
+    color:#d0548b;
+}
+
+.lojica-admin.wp-core-ui .button-secondary,
+.lojica-admin.wp-core-ui .button,
+.lojica-admin .wrap .page-title-action,
+.lojica-admin .wrap .page-title-action{
+    color: #616a78;
+    background-color: #e4e7ea;
+    border-color: #e4e7ea;
+}
+
+.lojica-admin .wrap .add-new-h2,
+.lojica-admin .wrap .page-title-action,
+.lojica-admin.wp-core-ui .button,
+.lojica-admin.wp-core-ui .button-primary,
+.lojica-admin.wp-core-ui .button-secondary,
+.lojica-admin .wrap .page-title-action,
+.lojica-admin .wrap .page-title-action{
+    box-shadow: none !important;
+    webkit-box-shadow: none !important;
+    font-size: 14px;
+    padding: 5px 16px;
+    line-height: inherit;
+    text-shadow:none;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    border-width: 1px;
+    border-style: solid;
+    outline: none !important;
+    transition: 0.15s linear;
+}
+
+.lojica-admin input[type="text"],
+.lojica-admin input[type="search"],
+.lojica-admin input[type="radio"],
+.lojica-admin input[type="tel"],
+.lojica-admin input[type="time"],
+.lojica-admin input[type="url"],
+.lojica-admin input[type="week"],
+.lojica-admin input[type="password"],
+.lojica-admin input[type="checkbox"],
+.lojica-admin input[type="color"],
+.lojica-admin input[type="date"],
+.lojica-admin input[type="datetime"],
+.lojica-admin input[type="datetime-local"],
+.lojica-admin input[type="email"],
+.lojica-admin input[type="month"],
+.lojica-admin input[type="number"],
+.lojica-admin select,
+.lojica-admin textarea {
+    background-color: #fcfdfe;
+    border: 1px solid #ebebeb;
+    color: #929daf;
+}
+
+.lojica-admin .widefat tfoot td,
+.lojica-admin .widefat tfoot th
+{
+    border-top: 1px solid rgba(97,106,120,0.07);
+    line-height: 24px;
+}
+
+.lojica-admin #adminmenu .wp-submenu li{
+    transition: all 1s;
+}
+
+.lojica-admin #adminmenu li.menu-top,
+.lojica-admin .widefat thead td,
+.lojica-admin .widefat thead th,
+.lojica-admin .widefat tfoot td,
+.lojica-admin .widefat tfoot th
+{
+    border-bottom: 1px solid rgba(97,106,120,0.07);
+    line-height: 24px;
+    transition: all 1s;
+}
+
+.lojica-admin #adminmenu li:hover,
+.lojica-admin #adminmenu li:active,
+.lojica-admin #adminmenu li:focus,
+.lojica-admin #adminmenu li.opensub.menu-top,
+.lojica-admin #adminmenu li.opensub.menu-top,
+.lojica-admin #adminmenu li.opensub.menu-top,
+.lojica-admin #adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head,
+.lojica-admin #adminmenu .wp-menu-arrow,
+.lojica-admin #adminmenu .wp-menu-arrow div,
+.lojica-admin #adminmenu li.current a.menu-top,
+.lojica-admin #adminmenu li.wp-has-current-submenu a.wp-has-current-submenu,
+.lojica-admin .folded #adminmenu li.current.menu-top,
+.lojica-admin .folded #adminmenu li.wp-has-current-submenu,
+.lojica-admin #adminmenu li.menu-top:hover,
+.lojica-admin #adminmenu li.opensub > a.menu-top,
+.lojica-admin #adminmenu li > a.menu-top:focus{
+    background-color: #f9fafb !important;
+}
+
+.lojica-admin #adminmenu .wp-not-current-submenu .wp-submenu,
+.lojica-admin .folded #adminmenu .wp-has-current-submenu .wp-submenu {
     padding: 0px;
 }
 
-.device-widget #wpadminbar ul li.lojica-logo {
-    padding: 11px;
+.lojica-admin #adminmenu .wp-submenu a{
+    padding: 10px;
+    transition: all .8s;
 }
 
-body.wp-admin, body.wp-admin div#wpwrap {
-    background: transparent none repeat scroll 0 0;
+.lojica-admin #wpadminbar,
+.admin-bar #wpadminbar{
+    background: #7d19c0; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #7d19c0, #c32883); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #7d19c0, #c32883); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 4px 0 5px rgba(0,0,0,0.3);
+    opacity: .93;
 }
 
-#wpadminbar #wp-admin-bar-root-default *{
-    font-family: "Lato";
-    font-size: 1em;
-    font-weight: 400;
+.lojica-admin #wpadminbar .menupop .ab-sub-wrapper,
+.lojica-admin #wpadminbar .shortlink-input,
+.admin-bar #wpadminbar .shortlink-input,
+.admin-bar #wpadminbar .menupop .ab-sub-wrapper{
+    background: #7d19c0;
+    opacity: .96;
 }
 
-body.wp-admin{
-    color: #7a7c82;
-    font-family: "Open Sans";
-    font-size: 13px;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 22px;
+.lojica-admin #wpadminbar .menupop.with-avatar .ab-sub-wrapper,
+.admin-bar #wpadminbar .menupop.with-avatar .ab-sub-wrapper  {
+    background: #c32883;
+    opacity: .96;
 }
 
-body.admin-bar, #wpwrap {
-    background: inherit;
+.lojica-admin #wpadminbar .quicklinks .menupop ul.ab-sub-secondary,
+.lojica-admin #wpadminbar .quicklinks .menupop ul.ab-sub-secondary .ab-submenu,
+.admin-bar #wpadminbar .quicklinks .menupop ul.ab-sub-secondary,
+.admin-bar #wpadminbar .quicklinks .menupop ul.ab-sub-secondary .ab-submenu{
+    background: #7d19c0;
+    opacity: 1;
 }
 
-body.wp-admin h1,
-body.wp-admin h2,
-body.wp-admin h3,
-body.wp-admin h4,
-body.wp-admin h5,
-body.wp-admin h6 {
-    font-family: "Roboto Slab";
-    font-weight: 400;
-    line-height: 1;
+.lojica-admin #wp-admin-bar-lojica-logo a,
+#wp-admin-bar-lojica-logo a{
+    max-width: 70px;
 }
 
-body.login{
-    background-color:#fff;
+.lojica-admin #wp-admin-bar-lojica-logo a img,
+#wp-admin-bar-lojica-logo a img{
+    max-width: inherit;
 }
 
-
-#loginform, .login #login_error, .login .message {
-    background: transparent none repeat scroll 0 0;
-    border: 1px solid #dadadc;
-    box-shadow: none;
-    margin: 0 auto;
-    max-width: 370px !important;
-    padding: 30px;
+.lojica-admin .wp-responsive-open #wpadminbar #wp-admin-bar-menu-toggle .ab-icon::before {
+    color: white;
 }
 
-.login #login_error a, .login label, .login #backtoblog a, .login #nav a{
-    color: #7a7c82;
-    font-family: "Lato";
-    font-size: 13px;
-    line-height: 23px;
-    padding: 0;
+.lojica-admin #wpadminbar .ab-top-menu > li.hover > .ab-item,
+.lojica-admin #wpadminbar.nojq .quicklinks .ab-top-menu > li > .ab-item:focus,
+.lojica-admin #wpadminbar:not(.mobile) .ab-top-menu > li:hover > .ab-item,
+.lojica-admin #wpadminbar:not(.mobile) .ab-top-menu > li > .ab-item:focus{
+    color:white;
 }
 
-body.login #login {
-    max-width: 350px;
-    width: inherit;
+.wp-responsive-open #wpadminbar #wp-admin-bar-menu-toggle a{
+    color: white;
+    opacity: .4;
 }
 
-.login .wp-core-ui .button-group.button-large .button,
-.login .wp-core-ui .button.button-large {
-    color: #fff;
-    font-family: Lato;
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-top:15px;
-    width: 100%;
-    padding:0;
-    text-shadow:none;
-    border-color: transparent;
-    box-shadow: none;
-    height: inherit;
-    border-color: transparent;
-    box-shadow: none;
-    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #f06422 0%, #ef7d47 59%, #ef9d77 100%) repeat scroll 0 0;
-}
-.login .wp-core-ui .button-group.button-large .button:hover,
-.login .wp-core-ui .button.button-large:hover{
-    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #ef9d77 0%, #ef7d47 59%, #f06422 100%) repeat scroll 0 0;
-}
-
-.login form .input, .login input[type="text"]{
-    background: none;
-    box-shadow: none;
-}
-
-
-.login #nav a:hover, .login #backtoblog a:hover{
-    color:black;
-}
-
-.login h1 a{
-    min-height: 110px;
-}
-
-.login.wp-core-ui .button-group.button-large .button,
-.login.wp-core-ui .button.button-large {
-  background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #f06422 0%, #ef7d47 59%, #ef9d77 100%) repeat scroll 0 0;
-  border: 1px solid rgba(0, 0, 0, 0);
-  border-radius: 4px;
-  box-shadow: none;
-  font-family: Lato;
-  font-size: 14px;
-  font-weight: bold;
-  height: 30px;
-  margin-top: 11px;
-  padding: 6px 12px;
-  line-height: 0;
-  text-shadow: initial;
-  text-transform: uppercase;
-  width: 100%;
-}
-
-
-.login.wp-core-ui .button-group.button-large .button:hover,
-.login.wp-core-ui .button.button-large:hover {
-  background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #ef9d77 0%, #ef7d47 59%, #f06422 100%) repeat scroll 0 0;
+.lojica-admin #collapse-button:focus, #collapse-button:hover,
+.lojica-admin #collapse-button:focus, #collapse-button:hover,
+.lojica-admin #collapse-button:focus, #collapse-button:hover,
+.lojica-admin  #adminmenu li.wp-has-current-submenu a.wp-has-current-submenu div.wp-menu-name,
+.lojica-admin  #adminmenu li.wp-has-current-submenu a.wp-has-current-submenu div.wp-menu-name,
+.lojica-admin  #adminmenu .opensub .wp-submenu li.current a,
+.lojica-admin  #adminmenu .wp-submenu li.current,
+.lojica-admin  #adminmenu .wp-submenu li.current a,
+.lojica-admin  #adminmenu .wp-submenu li.current a:focus,
+.lojica-admin  #adminmenu .wp-submenu li.current a:hover,
+.lojica-admin  #adminmenu a.wp-has-current-submenu:focus + .wp-submenu li.current a,
+.lojica-admin  #adminmenu .wp-submenu .wp-submenu-head,
+.lojica-admin  #adminmenu .current div.wp-menu-image::before,
+.lojica-admin  #adminmenu .wp-has-current-submenu div.wp-menu-image::before,
+.lojica-admin  #adminmenu a.current:hover div.wp-menu-image::before,
+.lojica-admin  #adminmenu a.wp-has-current-submenu:hover div.wp-menu-image::before,
+.lojica-admin  #adminmenu li.wp-has-current-submenu:hover div.wp-menu-image::before,
+.lojica-admin  #adminmenu li:hover div.wp-menu-image::before,
+.lojica-admin  #adminmenu li a:focus div.wp-menu-image::before,
+.lojica-admin  #adminmenu li.opensub div.wp-menu-image::before,
+.lojica-admin  #adminmenu li:hover div.wp-menu-image::before{
+	color: #d0548b !important;
 }

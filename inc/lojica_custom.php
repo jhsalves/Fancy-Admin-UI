@@ -38,3 +38,7 @@ function wp_lojica_admin_rodape() {
     }
     echo 'Lojica© 2017 | <a target="_blank" href="' . $termos_de_uso . '">Termos de uso</a> | <a target="_blank" href="' . $politica_de_privacidade . '">Política de privacidade</a> | <a href="' . $politica_de_suporte . '" target="_blank">Política de suporte</a> | <a href="' . $creditos . '" target="_blank">Créditos</a></p>';
 }
+
+add_filter('admin_body_class',function($classes){
+    return $classes[] = 'lojica-admin';
+});
