@@ -1,5 +1,4 @@
 <?php
-
 if (!defined('ABSPATH')) {
     exit;
 }
@@ -39,6 +38,58 @@ function wp_lojica_admin_rodape() {
     echo 'Lojica© 2017 | <a target="_blank" href="' . $termos_de_uso . '">Termos de uso</a> | <a target="_blank" href="' . $politica_de_privacidade . '">Política de privacidade</a> | <a href="' . $politica_de_suporte . '" target="_blank">Política de suporte</a> | <a href="' . $creditos . '" target="_blank">Créditos</a></p>';
 }
 
-add_filter('admin_body_class',function($classes){
+add_filter('admin_body_class', function($classes) {
+    if(!is_array($classes) || empty($classes)){
+        return ['lojica-admin'];
+    }
     return $classes[] = 'lojica-admin';
+});
+
+if (!defined('get_logo_url_path')) {
+
+    function get_logo_url_path($logo_type = 'default') {
+        $logo = '';
+        switch_to_blog(get_current_site()->blog_id);
+
+        $img = get_theme_mod('logo_default');
+
+        if ('light' == $logo_type) {
+            $img = get_theme_mod('logo_light');
+        }
+        restore_current_blog();
+        return esc_url($img);
+    }
+
+}
+
+function get_logo_img($class, $type) {
+    $logo = '';
+    $img = get_logo_url_path($type);
+    $blog_name_safe = esc_attr(get_bloginfo('name', 'display'));
+    if ($img) {
+
+        if ($class) {
+            $class = ' class="' . esc_attr($class) . '"';
+        }
+
+        $logo = '<img src="' . esc_url($img) . '" alt="' . $blog_name_safe . '"' . $class . '>';
+    } else {
+        $logo = '<span class="brand-title ' . esc_attr($class) . '">' . $blog_name_safe . '</span>';
+    }
+    return $logo;
+}
+
+add_action('login_enqueue_scripts', function () {
+    ?>
+    <style type="text/css">
+        #login h1 a, .login h1 a {
+            background-image: url(<?= get_logo_url_path() ?>);
+            height: 78px;
+            width: auto;
+            background-size: contain;
+            background-repeat: no-repeat;
+            /* padding-bottom: 30px; */
+        }
+    </style>
+    <?php
 });
