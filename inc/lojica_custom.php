@@ -81,8 +81,8 @@ function get_logo_img($class, $type) {
 add_action('login_enqueue_scripts', function () {
     ?>
     <style type="text/css">
-        #login h1 a, .login h1 a {
-            background-image: url(<?= get_logo_url_path() ?>);
+        #login h1 a, .login h1 a, login #login h1 a {
+            background-image: url(<?= get_logo_url_path() ?>) !important;
             height: 78px;
             width: auto;
             background-size: contain;
