@@ -332,3 +332,9 @@ body.lojica-admin,
 .lojica-admin  #adminmenu li:hover div.wp-menu-image::before{
 	color: #d0548b !important;
 }
+
+@media screen and (min-width: 782px) {
+  html.elementor-html {
+    padding: 0 !important;
+  }
+}

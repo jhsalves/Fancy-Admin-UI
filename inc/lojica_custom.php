@@ -39,10 +39,9 @@ function wp_lojica_admin_rodape() {
 }
 
 add_filter('admin_body_class', function($classes) {
-    if(!is_array($classes) || empty($classes)){
-        return ['lojica-admin'];
+    if (is_string($classes)) {
+        return $classes .= ' lojica-admin';
     }
-    return $classes[] = 'lojica-admin';
 });
 
 if (!defined('get_logo_url_path')) {
